@@ -9,6 +9,7 @@ import { Component } from '@angular/core';
 })
 export class ServersComponent {
   allowNerServer = false;
+  serverCreationStatus: string = 'No server was created!';
 
   constructor() {
     setTimeout(() => {
@@ -18,6 +19,10 @@ export class ServersComponent {
 
   ngOnInit() {
 
+  }
+
+  onCreateServer() {
+    this.serverCreationStatus = 'Server was created!';
   }
 
 }
