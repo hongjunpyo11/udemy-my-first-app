@@ -8,5 +8,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./servers.component.css']
 })
 export class ServersComponent {
+  allowNerServer = false;
+
+  constructor() {
+    setTimeout(() => {
+      this.allowNerServer = true;
+    }, 2000);
+  }
+
+  ngOnInit() {
+
+  }
 
 }
